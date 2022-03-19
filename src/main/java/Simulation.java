@@ -34,7 +34,7 @@ public class Simulation {
         double percent = 0.00;
         int binNum = 2;
         System.out.println("***\n" + "Simulation of " + numberOfDie + " dice tossed for " + numberOfTosses + " times.\n" + "***");
-        for (int i = 0; i < (numberOfDie*6 - 1); i++) {
+        for (int i = 2; i < (numberOfDie*6 - 1); i++) {
             results = bin.getBin(binNum);
             binNum += 1;
             percent = (double) results/numberOfTosses;
