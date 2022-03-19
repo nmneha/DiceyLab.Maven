@@ -4,6 +4,11 @@ public class Dice {
     private int numberOfDie;
     private Random rand = new Random();
 
+
+    public int getNumberOfDie() {
+        return numberOfDie;
+    }
+
     public Dice(int numberOfDies) {
         this.numberOfDie = numberOfDies;
     }
@@ -16,6 +21,8 @@ public class Dice {
         return sum;
 
     }
+
+
 
 
 }

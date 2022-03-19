@@ -1,10 +1,12 @@
 
 public class Bins {
 //    Dice dice = new Dice(2);
-    private int lowestBin;
-    private int[] bin;
+    private final int lowestBin;
+    private final int[] bin;
+    private final int highestBin;
 
     public Bins(int lowest, int highest) {
+        this.highestBin = highest;
         this.lowestBin = lowest;
         this.bin = new int[highest-lowest+1];
     }
@@ -14,7 +16,7 @@ public class Bins {
     }
 
     public void increment(int number) {
-        bin[number - lowestBin] += number;
+        bin[number - lowestBin]++;
     }
 
 }

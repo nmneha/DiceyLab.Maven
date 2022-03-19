@@ -21,7 +21,7 @@ class BinsTest {
     @Test
     void increment() {
        // given
-        int expected = 20;
+        int expected = 2;
         System.out.println("Before: " + results.getBin(10));
 
         results.increment(10);
@@ -29,6 +29,8 @@ class BinsTest {
 
         System.out.println("After: " + results.getBin(10));
         int actual = results.getBin(10);
+
+        Assert.assertEquals(expected, actual);
 
     }
 }
